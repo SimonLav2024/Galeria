@@ -1,0 +1,51 @@
+/* esto es todo para conseguir que las imagenes esten alineadas y contenidas en sus respectivos contenedores */
+.display {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.principal {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.imagen-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   margin: 0 auto;
+   gap: 12pxs;
+}
+.imagenes{
+    width: 100%;
+    object-fit: contain;
+}
+.ajuste-img {
+    width: 19%;
+}
+/* fin */
+
+/* animacion de aumento de la imagen en hover */
+.imagenes:hover {
+    animation-name: hover;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes hover {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
+}
+/* fin */
+
+
+
