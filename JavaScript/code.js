@@ -10,10 +10,8 @@ const miniaturasArray = [
 
 miniaturas.forEach(miniatura => {
     miniatura.addEventListener("click", function(e){
-        console.log(e);
         let idImagen = e.currentTarget.id;
-        console.log(idImagen);
         imagenPrincipal.src = miniaturasArray[idImagen].imagen;
         imagenPrincipal.alt = miniaturasArray[idImagen].altImagen;
     });
-})
+});
