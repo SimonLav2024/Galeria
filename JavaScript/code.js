@@ -1,11 +1,11 @@
 const imagenPrincipal = document.getElementById("img-princ");
 const miniaturas = document.querySelectorAll(".imagenes");
 const miniaturasArray = [
-    {imagen: "img/arboles.jpg", altImagen: "arboles"},
-    {imagen: "img/escaleras.jpg", altImagen: "escaleras"},
-    {imagen: "img/pasillo.jpg", altImagen: "pasillo"},
-    {imagen: "img/vistas.jpg", altImagen: "vistas"},
-    {imagen: "img/teide.jpg", altImagen: "teide"}
+    {imagen: "img/arboles.JPG", altImagen: "arboles"},
+    {imagen: "img/escaleras.JPG", altImagen: "escaleras"},
+    {imagen: "img/pasillo.JPG", altImagen: "pasillo"},
+    {imagen: "img/vistas.JPG", altImagen: "vistas"},
+    {imagen: "img/teide.JPG", altImagen: "teide"}
 ];
 
 miniaturas.forEach(miniatura => {
