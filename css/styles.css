@@ -48,10 +48,11 @@ h1 {
     width: 250px;
     /* height: 100vh; Ocupa toda la altura de la ventana */
     background-color: rgba(187, 187, 187, 0.251);
-    margin-left: 2rem;
+    margin-left: 0;
     position: fixed; /* Se queda fija al hacer scroll */
     top: 400px;
-    border-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .sidebar a {
@@ -70,17 +71,19 @@ h1 {
 }
 .sidebar a:hover {
     background-color: #5757577d;
-    border-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 /* sidebar de la galeria modal */
 .sidebar2 {
     width: 250px;
     /* height: 100vh; Ocupa toda la altura de la ventana */
     background-color: rgba(187, 187, 187, 0.251);
-    margin-left: 2rem;
+    margin-left: 0;
     position: fixed; /* Se queda fija al hacer scroll */
     top: 210px;
-    border-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .sidebar2 a {
@@ -97,7 +100,8 @@ h1 {
 }
 .sidebar2 a:hover {
     background-color: #5757577d;
-    border-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 /* fin de toda la sidebar */
 
