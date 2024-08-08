@@ -103,6 +103,16 @@ h1 {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
+@media screen and (max-width: 450px){ /*esta vez la media esta para que todo lo que hay dentro se haga para la vision en el movil */
+    .sidebar {
+        display: none;
+    }
+    .sidebar2 {
+        display: none;
+    }
+}
+
 /* fin de toda la sidebar */
 
 /* esto es todo para conseguir que las imagenes esten alineadas y contenidas en sus respectivos contenedores */
@@ -136,7 +146,7 @@ h1 {
         flex-wrap: wrap;
     }
     .ajuste-img {
-        width: 100%;
+        min-width: 48%;
     }
     .imagenes {
         width: 100%;
@@ -160,7 +170,7 @@ h1 {
    justify-content: space-between;
    width: 80%;
    margin: 0 auto;
-   gap: 12pxs;
+   gap: 12px;
 }
 .imagenes{
     width: 100%;
