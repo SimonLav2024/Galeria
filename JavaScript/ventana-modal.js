@@ -24,6 +24,8 @@ window.onclick = (event) => {
         modal.style.display = "none";
     }
 }
+
+//esto es la barra de navegacion que se aparece en la version movil pero en la version pc esta oculta por el css
 document.getElementById("boton").addEventListener('click', function toggleMenu(){
     let myNav = document.getElementById("myNavbar");
     if(myNav.className === "navbar"){
@@ -32,3 +34,4 @@ document.getElementById("boton").addEventListener('click', function toggleMenu()
         myNav.className = "navbar"
     }
 });
+// fin
