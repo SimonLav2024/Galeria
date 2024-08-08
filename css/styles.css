@@ -290,11 +290,7 @@ h1 {
 /* fin */
 
 /* este footer es para la pagina de la ventana modal */
-.footer { 
-    /* esto es para meter el footer al final de la pagina independientemente del contenido de la pagina */
-    position: absolute;
-    bottom: 0;
-    /* fin */
+.footer {
     text-align: center;
     font-size: 12px;
     background-color: rgba(187, 187, 187, 0.251);
@@ -302,6 +298,14 @@ h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 1rem;
 }
+/* esto es para meter el footer al final de la pagina independientemente del contenido de la pagina en vista pc en vista movil simplemente no esta esto puesto y ya esta por que asi lo pone de footer despues del contenido */
+@media (min-width: 450px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+/* fin */
 /* este footer es para la pagina de la galeria simple */
 .footer-prima {
     text-align: center;
