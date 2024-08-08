@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Galeria modal</title>
+</head>
+<body>
+    <!-- contenido de la pagina principal en este caso las imagenes que luego se veran en el modal -->
+    <h1>Galería</h1>
+    <p class="p1">Cuando pulses en la imagen esta aparecerá grande en pantalla como ventana modal.</p>
+    <hr class="hr1">
+    <div class="sidebar2">
+        <a href="index.html">Enlace a galería simple</a>
+    </div>
+    <div class="display">
+        <!-- <div class="principal">
+            <img class="imagen-principal" id="img-princ" src="img/arboles.JPG" alt="">
+        </div> -->
+        <div class="container">
+            <div class="ajuste-img">
+                <img class="imagenes" src="img/miniatures/min-arboles.jpg" title="arboles" alt="arboles" id="0" data-full="img\arboles.JPG">
+            </div>
+            <div class="ajuste-img">
+                <img class="imagenes" src="img/miniatures/min-escaleras.jpg" title="escaleras" alt="escaleras" id="1" data-full="img\escaleras.JPG">
+            </div>
+            <div class="ajuste-img">
+                <img class="imagenes" src="img/miniatures/min-pasillo.jpg" title="pasillo" alt="pasillo" id="2" data-full="img\pasillo.JPG">
+            </div>
+            <div class="ajuste-img">
+                <img class="imagenes" src="img/miniatures/min-vistas.jpg" title="vistas" alt="vistas" id="3" data-full="img\teide.JPG">
+            </div>
+            <div class="ajuste-img">
+                <img class="imagenes" src="img/miniatures/min-teide.jpg" title="teide" alt="teide" id="4" data-full="img\vistas.JPG">
+            </div>
+        </div>
+    </div>
+    <hr class="hr2">
+    <!-- fin del contenido de las imagenes -->
+
+    <!-- contenido de la ventana modal -->
+    <div id="imagenModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="" alt="imagen ampliada" class="modal-image">
+        </div>
+    </div>
+    <!-- fin de la ventna modal -->
+
+    <footer class="footer">
+        <p>® Todos los derechos reservados. Simón Lavdorenko Shyn</p>
+        <p>Todo lo que hay escrito es una obra de ficción y cualquier parecido con la realidad es puramente casual y no responsabiliza ni vincula al creador</p>
+    </footer>
+
+<script src="JavaScript/ventana-modal.js"></script>
+</body>
+</html>
