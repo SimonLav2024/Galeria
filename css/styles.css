@@ -112,8 +112,70 @@ h1 {
         display: none;
     }
 }
-
 /* fin de toda la sidebar */
+
+/* navbar */
+@media screen and (max-width: 600px) {
+    
+}
+.navbar {
+    display: none;
+    background-color: rgba(187, 187, 187, 0.251);
+    overflow: hidden;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    background-color: #5757577d;
+    color: black;
+}
+.elim-enlace {
+    pointer-events: none;
+}
+@media screen and (max-width: 600px){ /*esta vez la media esta para que todo lo que hay dentro se haga para la vision en el movil */
+    .navbar {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/* fin navbar */
 
 /* esto es todo para conseguir que las imagenes esten alineadas y contenidas en sus respectivos contenedores */
 .display {
@@ -251,3 +313,4 @@ h1 {
     margin-top: 1rem;
     padding: 1px;
 }
+/* fin */
